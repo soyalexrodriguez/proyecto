@@ -4,28 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto AWS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
   </head>
   <body>
-    <section id="seccion-semaforo">
-      <div id="semaforo">
-        <div id="luz-roja">Circulo color rojo</div>
-        <div id="luz-ambar">Circulo color ambar</div>
-        <div id="luz-verde">Circulo color verde</div>
-      </div>
-    </section>
-    <section id="seccion-video">
-      <div id="contenedor-mensaje">
-        <p id="mensaje">
-          Aqui se muestran los mensajes conforme a la reproduccion del video
-        </p>
-      </div>
-      <div id="contenedor-video">
-        <video id="video">Aqui va el video</video>
-      </div>
-      <div id="contenedor-botones">
-        <button id="cargar-video">Subir o cargar video</button>
-        <button id="play-video">Reproducir video</button>
-      </div>
+    <section id="contenedor-titulo"><h1 id="titulo">PROYECTO AI</h1></section>
+    <section id="contenedor-principal">
+      <section id="seccion-semaforo">
+        <div id="semaforo">
+          <div id="luz-roja" class="circulo"></div>
+          <div id="luz-ambar" class="circulo"></div>
+          <div id="luz-verde" class="circulo"></div>
+        </div>
+      </section>
+      <section id="seccion-video">
+        <div id="contenedor-mensaje" class="marco">
+          <h2 id="bot">🤖</h2>
+          <div id="box-mensaje">
+            <p id="mensaje">
+              Hola, estoy listo para trabajar. Carga un video para
+              empezar la detección
+            </p>
+          </div>
+        </div>
+        <div id="contenedor-video" class="marco">
+          <video id="video">Aqui va el video</video>
+        </div>
+        <div id="contenedor-botones" class="marco">
+          <button id="cargar-video" class="btn">Subir o cargar video</button>
+          <button id="play-video" class="btn">Reproducir video</button>
+        </div>
+      </section>
     </section>
   </body>
 </html>
