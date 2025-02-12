@@ -27,19 +27,25 @@
           <h2 id="bot">🤖</h2>
           <div id="box-mensaje">
             <p id="mensaje">
-              Hola, estoy listo para trabajar. Carga un video para
-              empezar la detección
+              Hola, estoy listo para trabajar. Sube un video para iniciar el
+              análisis
             </p>
           </div>
         </div>
         <div id="contenedor-video" class="marco">
-          <video id="video">Aqui va el video</video>
+          <div class="video-wrapper">
+            <video id="video" src=""></video>
+            <canvas id="video-canvas"></canvas>
+          </div>
         </div>
         <div id="contenedor-botones" class="marco">
-          <button id="cargar-video" class="btn">Subir o cargar video</button>
+          <button id="cargar-video" class="btn">Subir video</button>
           <button id="play-video" class="btn">Reproducir video</button>
         </div>
       </section>
     </section>
+    <script src="./js/upload-video.js"></script>
+    <script src="./js/play-video.js"></script>
+    <script src="./js/semaforo.js"></script>
   </body>
 </html>
