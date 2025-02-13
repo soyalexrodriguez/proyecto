@@ -37,7 +37,7 @@ document
         mostrarMensaje("Subiendo video ...");
 
         desctivarBotones();
-        const response = await fetch("http://localhost:3000/upload", {
+        const response = await fetch("https://proyectouniaiserver.onrender.com/upload", {
           method: "POST",
           body: formData,
         });
@@ -67,7 +67,7 @@ document
 function obtenerLabels(jobId) {
   const interval = setInterval(async () => {
     try {
-      const response = await fetch(`http://localhost:3000/labels/${jobId}`, {
+      const response = await fetch(`https://proyectouniaiserver.onrender.com/labels/${jobId}`, {
         method: "GET",
         headers: {
           Accept: "application/json",
