@@ -37,7 +37,7 @@ document
         mostrarMensaje("Subiendo video ...");
 
         desctivarBotones();
-        const response = await fetch("http://192.168.1.46:3000/upload", {
+        const response = await fetch("http://localhost:3000/upload", {
           method: "POST",
           body: formData,
         });
@@ -67,7 +67,7 @@ document
 function obtenerLabels(jobId) {
   const interval = setInterval(async () => {
     try {
-      const response = await fetch(`http://192.168.1.46:3000/labels/${jobId}`, {
+      const response = await fetch(`http://localhost:3000/labels/${jobId}`, {
         method: "GET",
         headers: {
           Accept: "application/json",
